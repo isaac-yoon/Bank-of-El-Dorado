@@ -1,4 +1,4 @@
-package com.eldorado.bank.Objects;
+package com.eldorado.bank.Models;
 
 import java.util.Objects;
 
@@ -56,12 +56,14 @@ public class Account {
 
     @Override
     public boolean equals(Object o) {
-        if (o == this)
-            return true;
+        if (o == this) return true;
+
         if (!(o instanceof Account)) {
             return false;
         }
+
         Account account = (Account) o;
+        
         return account_id == account.account_id && user_id == account.user_id && account_type == account.account_type
                 && loyalty_points == account.loyalty_points && balance == account.balance;
     }

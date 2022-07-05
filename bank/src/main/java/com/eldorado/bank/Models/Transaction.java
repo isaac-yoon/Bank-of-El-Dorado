@@ -1,4 +1,4 @@
-package com.eldorado.bank.Objects;
+package com.eldorado.bank.Models;
 
 import java.util.Objects;
 
